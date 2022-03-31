@@ -1,0 +1,44 @@
+.hb-ratingbar {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+  cursor: pointer;
+
+  .unfilled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+    z-index: 1;
+  }
+
+  .filled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #f4a100;
+    z-index: 2;
+  }
+
+  .cover {
+    color: #fff;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @for $i from 0 through 10 {
+    &[data-rated="#{$i*0.5}"] {
+      .filled {
+        width: $i * 10%;
+      }
+    }
+  }
+}

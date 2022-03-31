@@ -1,0 +1,81 @@
+.hb-ratingbar {
+  position: relative;
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.hb-ratingbar .unfilled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  z-index: 1;
+}
+
+.hb-ratingbar .filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #f4a100;
+  z-index: 2;
+}
+
+.hb-ratingbar .cover {
+  color: #fff;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hb-ratingbar[data-rated="0"] .filled {
+  width: 0%;
+}
+
+.hb-ratingbar[data-rated="0.5"] .filled {
+  width: 10%;
+}
+
+.hb-ratingbar[data-rated="1"] .filled {
+  width: 20%;
+}
+
+.hb-ratingbar[data-rated="1.5"] .filled {
+  width: 30%;
+}
+
+.hb-ratingbar[data-rated="2"] .filled {
+  width: 40%;
+}
+
+.hb-ratingbar[data-rated="2.5"] .filled {
+  width: 50%;
+}
+
+.hb-ratingbar[data-rated="3"] .filled {
+  width: 60%;
+}
+
+.hb-ratingbar[data-rated="3.5"] .filled {
+  width: 70%;
+}
+
+.hb-ratingbar[data-rated="4"] .filled {
+  width: 80%;
+}
+
+.hb-ratingbar[data-rated="4.5"] .filled {
+  width: 90%;
+}
+
+.hb-ratingbar[data-rated="5"] .filled {
+  width: 100%;
+}
+/*# sourceMappingURL=rating.css.map */

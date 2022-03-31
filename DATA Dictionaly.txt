@@ -1,0 +1,53 @@
+
+#farmer
+-ID(PK)
+-Name (rating system)
+-phone
+-email
+
+#Location
+-id(PK)
+-name(Get and set Location)
+
+#Productsn
+-id(PK)
+-name
+-image
+
+#product_type
+-id (PK)
+-name
+
+#farmer_pricing
+-product_id(FK)
+-price
+
+#farmer_location
+-farmer_id(FK)
+-Location_id(FK)
+
+Delivaly Option
+-id(Pk)
+-name
+location_id(FK)
+
+#purchase
+-id
+-date|time
+-payment_option(FK)
+-Cart_Number(FK)
+
+#cart
+-Cart_Number(PK)
+-product_id(fk)
+-user_id(fk)
+-total()
+
+#user
+id(PK)
+name
+phone
+
+#payment_option
+-id(PK)
+-name
